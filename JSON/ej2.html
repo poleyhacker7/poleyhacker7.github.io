@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function generaTr(objeto_recuperado) {
+return "<tr>"+
+    "<td>" + objeto_recuperado.nombre + "</td>"+
+    "<td>" + objeto_recuperado.apellidos + "</td>"+
+    "<td>" + objeto_recuperado.edad + "</td>"+
+    "<td>" + objeto_recuperado.ciudad + "</td>"+
+    "</tr>";
+}
+
+let objJson = {
+id: $("#id"),	nombre: $("#nombre").val(),	apellidos: $("#apellidos").val(),
+edad: ("#edad").val(), ciudad: $("#ciudad").val(),
+};
+// Objeto JavaScript a JSON
+const json_serializado = serializar(objJson);
+// JSON a objeto JavaScript
+const objeto_recuperado = deserializar(json_serializado);
+$("#tbody").append(generaTr(objeto_recuperado));
+</script>
+</body>
+</html>
