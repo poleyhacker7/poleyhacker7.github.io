@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="172cc71d-06af-47ec-86ed-b1b1c3ad5d78" name="Changes" comment="Ejercicios HTML">
-      <change afterPath="$PROJECT_DIR$/JSON/Creación simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSON/Futbolero.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSON/ej2.html" afterDir="false" />
+    <list default="true" id="f2e28300-a26e-468b-8f9d-f3dbacdd0d1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PREBA.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poley777.github.io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/poley777.github.io/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,101 +15,39 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/pedro.poley/WebstormProjects/poley777.github.io" value="348hqaZufFhaymNBPFlYOllVpqt" />
+      <entry key="_C:/Users/pedro.poley/Desktop/poley.github.io" value="3CQoHICx9ODtoofjIKEQL9fxBUy" />
     </persistenceIdMap>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="tsconfig.json" />
-        <option value="CSS File" />
-        <option value="HTML File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;assignee&quot;: &quot;poley777&quot;
-    }
-  ],
-  &quot;lastFilter&quot;: {}
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/poley777/poley777.github.io.git&quot;,
-    &quot;accountId&quot;: &quot;90561047-f415-4058-acff-57621ff4e1ce&quot;
-  }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/repaso.html" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="348hqaZufFhaymNBPFlYOllVpqt" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="3CQoHICx9ODtoofjIKEQL9fxBUy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Ejercicio01.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.Ejercicios con tablas.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.Imágenes con estilo.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.Mi tabla ejemplo.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.Tablas y enlaces.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.about.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.caja simple.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.cartel.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.ejemplos.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.ejercicio4.1.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.entradas.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.imágenes.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.localizacion.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.papa.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.prueba.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.tabla.html.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro.poley/WebstormProjects&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;consents&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pedro.poley\WebstormProjects" />
-      <recent name="C:\Users\pedro.poley\WebstormProjects\poley777.github.io" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pedro.poley\WebstormProjects\poley777.github.io\web" />
-      <recent name="C:\Users\pedro.poley\WebstormProjects\poley777.github.io" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -123,194 +57,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="172cc71d-06af-47ec-86ed-b1b1c3ad5d78" name="Changes" comment="" />
-      <created>1760601298556</created>
+      <changelist id="f2e28300-a26e-468b-8f9d-f3dbacdd0d1f" name="Changes" comment="" />
+      <created>1776327065932</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1760601298556</updated>
-      <workItem from="1760601300079" duration="1155000" />
-      <workItem from="1760608356456" duration="23000" />
-      <workItem from="1760608490334" duration="409000" />
-      <workItem from="1761028107540" duration="424000" />
-      <workItem from="1761028541119" duration="2848000" />
-      <workItem from="1761031740451" duration="2954000" />
-      <workItem from="1761812748897" duration="1000000" />
-      <workItem from="1763019241060" duration="436000" />
-      <workItem from="1763023285179" duration="170000" />
-      <workItem from="1763023463368" duration="130000" />
-      <workItem from="1763023595426" duration="5823000" />
-      <workItem from="1763031965669" duration="85000" />
-      <workItem from="1763384771732" duration="1992000" />
-      <workItem from="1763450350234" duration="3761000" />
-      <workItem from="1763623597003" duration="3673000" />
-      <workItem from="1764055921493" duration="1331000" />
-      <workItem from="1764057276108" duration="1544000" />
-      <workItem from="1764231542056" duration="2985000" />
-      <workItem from="1764234863150" duration="4236000" />
-      <workItem from="1764660228690" duration="3333000" />
-      <workItem from="1764836434181" duration="7907000" />
-      <workItem from="1764846364342" duration="33000" />
-      <workItem from="1765265497390" duration="1511000" />
-      <workItem from="1765270544369" duration="1193000" />
-      <workItem from="1765367772322" duration="749000" />
-      <workItem from="1765371769307" duration="737000" />
-      <workItem from="1765438179551" duration="137000" />
-      <workItem from="1773132779449" duration="690000" />
-      <workItem from="1773731968699" duration="3456000" />
-      <workItem from="1773906603802" duration="217000" />
-      <workItem from="1773908060393" duration="109000" />
-      <workItem from="1773908200605" duration="412000" />
-      <workItem from="1774338575347" duration="4000" />
-      <workItem from="1775719898886" duration="5661000" />
-      <workItem from="1776147885803" duration="2383000" />
-      <workItem from="1776324680656" duration="1793000" />
+      <updated>1776327065932</updated>
+      <workItem from="1776327066954" duration="302000" />
     </task>
-    <task id="LOCAL-00001" summary="ejemplos">
-      <option name="closed" value="true" />
-      <created>1760601521891</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1760601521891</updated>
-    </task>
-    <task id="LOCAL-00002" summary="ejemplos">
-      <option name="closed" value="true" />
-      <created>1760601599828</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1760601599828</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ejemplos">
-      <option name="closed" value="true" />
-      <created>1760601855317</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1760601855317</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1761028237366</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1761028237366</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1761029273027</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1761029273027</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1761031160662</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1761031160662</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1761033061740</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1761033061740</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1763023545229</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1763023545229</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1763031104972</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1763031104972</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1763031133127</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1763031133127</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1763032040980</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1763032040980</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1763386755866</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1763386755866</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1764244041451</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1764244041451</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1764846372573</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1764846372573</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1773132788534</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1773132788534</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Ejercicios HTML">
-      <option name="closed" value="true" />
-      <created>1773132794691</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1773132794691</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ejemplos" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <MESSAGE value="Ejercicios HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios HTML" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JavascriptDebugType">
-        <watch expression="   padding: 10px;&#10;            margin: 20px;&#10;            overflow: auto;" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
