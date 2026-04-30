@@ -1,196 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gestión de Personas</title>
+    <title>Ejercicio 2 - JSON y Tablas</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table { width: 60%; border-collapse: collapse; margin: 20px auto; font-family: Arial; }
+        th { background-color: #4CAF50; color: white; padding: 12px; }
+        td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        tr:nth-child(even){ background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
-<h1>Gestión de Personas</h1>
+    <h2 style="text-align:center;">Información del Alumno</h2>
 
-<form id="formulario">
-    <input type="text" id="nombre" placeholder="Nombre" />
-    <input type="text" id="apellidos" placeholder="Apellidos" />
-    <input type="number" id="edad" placeholder="Edad" />
-    <input type="text" id="ciudad" placeholder="Ciudad" />
-    <button type="button" id="btnAgregar">Agregar</button>
-</form>
-
-<br>
-
-<table border = "1">
-    <thead>
-    <tr>
-        <th>Nombre</th>
-        <th>Apellidos</th>
-        <th>Edad</th>
-        <th>Ciudad</th>
-        <th style="text-align: center">(Haz clic para eliminar)</th>
-    </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-</table>
-
-<div class="stats" id="stats"></div>
+    <table>
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nombre_tabla"></td>
+                <td id="apellidos_tabla"></td>
+                <td id="edad_tabla"></td>
+                <td id="ciudad_tabla"></td>
+            </tr>
+            </tbody>
+    </table>
 
 <script>
-    // 1. Array para guardar las filas que se van insertando (inicialmente vacío)
-    let personas = [];
-
-    function validarCampos() {
-        const nombre = $("#nombre").val().trim();
-        const apellidos = $("#apellidos").val().trim();
-        const edad = $("#edad").val().trim();
-        const ciudad = $("#ciudad").val().trim();
-
-        if (!nombre) {
-            alert("El campo nombre es obligatorio");
-            return false;
-        }
-        if (!apellidos) {
-            alert("El campo apellidos es obligatorio");
-            return false;
-        }
-        if (!edad) {
-            alert("El campo edad es obligatorio");
-            return false;
-        }
-        if (!ciudad) {
-            alert("El campo ciudad es obligatorio");
-            return false;
-        }
-        return true;
-    }
-
-    // 2. Función para crear TR (sin id, usa índice del array)
-    function generaTr(indice, objeto_recuperado) {
-        return `<tr class="fila" data-indice="${indice}" onclick="eliminarFila(${indice})">
-                    <td>${objeto_recuperado.nombre}</td>
-                    <td>${objeto_recuperado.apellidos}</td>
-                    <td>${objeto_recuperado.edad}</td>
-                    <td>${objeto_recuperado.ciudad}</td>
-                    <td style="text-align: center; cursor: pointer;">Eliminar</td>
-                </tr>`;
-    }
-
-    // 3. Función para generar la tabla (NUEVA - centralizada)
-    function generaTabla() {
-        const tbody = $("#tbody");
-        tbody.html(""); // Limpiar tabla actual
-
-        // Deserializar (opcional - aquí se hace automáticamente)
-        // const personasObj = JSON.parse(JSON.stringify(personas));
-
-        // forEach para cada elemento del array
-        personas.forEach((persona, indice) => {
-            const fila = generaTr(indice, persona);
-            tbody.append(fila);
-        });
-    }
-
-    // 4. Función para agregar persona (MODIFICADA)
-    function agregarPersona() {
-        if (!validarCampos()) return;
-
-        // Crear objeto JSON
-        const objJson = {
-            nombre: $("#nombre").val(),
-            apellidos: $("#apellidos").val(),
-            edad: parseInt($("#edad").val()),
-            ciudad: $("#ciudad").val()
+    $(document).ready(function () {
+        //1. El objeto con los datos
+        let persona = {
+            nombre: "Pedro",
+            apellido: "Poley",
+            edad: 26,
+            ciudad: "Granada"
         };
 
-        // Push del objeto al array
-        personas.push(objJson);
-        console.log("Persona agregada. Array actual:", personas);
+        //2. Serialización
+        let personaTexto = JSON.stringify(persona);
+        console.log("Enviando texto: " + personaTexto);
 
-        // Limpiar formulario
-        $("#formulario")[0].reset();
+        //3. Deserialización
+        let personaRecuperada = JSON.parse(personaTexto);
 
-        // Regenerar tabla completa
-        generaTabla();
-
-        // Actualizar estadísticas
-        actualizarEstadisticas();
-    }
-
-    // 5. Función para eliminar (MODIFICADA - usa splice con índice)
-    function eliminarFila(indice) {
-        console.log("Eliminando fila con índice:", indice);
-
-        // Eliminar del array usando splice
-        personas.splice(indice, 1);
-        console.log("Array después de eliminar:", personas);
-
-        // Regenerar tabla completa (esto reordena los índices automáticamente)
-        generaTabla();
-
-        // Actualizar estadísticas
-        actualizarEstadisticas();
-    }
-
-    // 6. Función para serializar a JSON (OPCIONAL)
-    function serializarPersonas() {
-        const json = JSON.stringify(personas);
-        console.log("JSON serializado:", json);
-        return json;
-    }
-
-    // 7. Función para deserializar JSON (OPCIONAL)
-    function deserializarPersonas(json) {
-        try {
-            personas = JSON.parse(json);
-            console.log("JSON deserializado:", personas);
-            generaTabla();
-            actualizarEstadisticas();
-        } catch (error) {
-            alert("Error al deserializar JSON: " + error.message);
-        }
-    }
-
-    function actualizarEstadisticas() {
-        if (personas.length === 0) {
-            $("#stats").html("<h3>Estadísticas</h3><p>No hay datos para mostrar</p>");
-            return;
-        }
-
-        let suma = 0;
-        let maximo = parseInt(personas[0].edad);
-        let minimo = parseInt(personas[0].edad);
-
-        personas.forEach(function(dato) {
-            let edad = parseInt(dato.edad);
-            suma += edad;
-            if (edad > maximo) maximo = edad;
-            if (edad > minimo) minimo = minimo;
-        });
-
-        let media = suma / personas.length;
-
-        const html = `
-            <h3>Estadísticas de Edades</h3>
-            <p><strong>Total de personas:</strong> ${personas.length}</p>
-            <p><strong>Suma de edades:</strong> ${suma}</p>
-            <p><strong>Media de edad:</strong> ${media.toFixed(2)}</p>
-            <p><strong>Edad máxima:</strong> ${maximo}</p>
-            <p><strong>Edad mínima:</strong> ${minimo}</p>
-            <button type="button" onclick="console.log(serializarPersonas());">Ver JSON en consola</button>
-        `;
-
-        $("#stats").html(html);
-
-        // Mostrar en consola
-        console.log("=== Estadísticas de Edades ===");
-        console.log(`Total de personas = ${personas.length}`);
-        console.log(`Suma = ${suma}`);
-        console.log(`Media = ${media.toFixed(2)}`);
-        console.log(`Máximo = ${maximo}`);
-        console.log(`Mínimo = ${minimo}`);
-    }
-
-    // Evento jQuery para agregar persona
-    $(document).ready(function() {
-        $("#btnAgregar").on("click", agregarPersona);
+        //4. Insertar en la tabla con JQuery
+        $("#nombre_tabla").text(personaRecuperada.nombre);
+        $("#apellidos_tabla").text(personaRecuperada.apellidos);
+        $("#edad_tabla").text(personaRecuperada.edad);
+        $("#ciudad_tabla").text(personaRecuperada.cidudad);
     });
 </script>
 </body>

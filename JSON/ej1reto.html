@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Tabla JSON con JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <h2>Datos Recuperados del JSON:</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+        º   <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="celdaNombre"></td>
+            <td id="celdaApellidos"></td>
+            <td id="celdadEdad"></td>
+            <td id="celdaCiudad"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<script>
+    $(document).ready(function () {
+        // --- 1. El objeto original
+        let persona = {
+            nombre: "Alberto",
+            apellidos: "García",
+            edad: 26,
+            ciudad: "Granada"
+        };
+
+        // --- PASO 2: Serialización (Convertir a texto JSON) ---
+        function serializar(objeto) {
+            return JSON.stringify(objeto);
+        }
+
+        let datosEnTexto = serializar(persona);
+        console.log("1. Texto JSON (Serializado):", datosEnTexto);
+
+        // --- PASO 3: Deserialización (Convertir texto JSON a Objeto JS) ---
+        function deserializar(texto) {
+            return JSON.parse(texto);
+        }
+
+        let objetoRecuperado = deserializar(datosEnTexto);
+        console.log("2. Objeto JS (Deserializado):", objetoRecuperado);
+
+
+        // --- Insertar datos usando JQuery y los IDs ---
+        $("#celdaNombre").text(objetoRecuperado.nombre);
+        $("#celdaApellidos").text(objetoRecuperado.apellidos);
+        $("#celdaEdad").text(objetoRecuperado.edad);
+        $("#celdaCiudad").text(objetoRecuperado.ciudad);
+
+        console.log("¡Datos insertados con éxito!")
+
+    });
+</script>
+</body>
+</html>

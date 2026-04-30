@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - JSON Paso a Paso</title>
+</head>
+<body>
+
+<h2>Datos Recuperados del JSON:</h2>
+<div id="resultado"></div>
+
+<script>
+    // --- PASO 1: Crear el objeto original (Datos en formato JS) ---
+    let persona = {
+        nombre: "Alberto",
+        apellidos: "García",
+        edad: 26,
+        ciudad: "Granada"
+    };
+
+    // --- PASO 2: Serialización (Convertir a texto JSON) ---
+    // Imagina que esto es "meter la ropa en la maleta" para enviarla por correo.
+    function serializar(objeto) {
+        return JSON.stringify(objeto);
+    }
+
+    let datosEnTexto = serializar(persona);
+    console.log("1. Texto JSON (Serializado):", datosEnTexto);
+
+
+    // --- PASO 3: Deserialización (Convertir texto JSON a Objeto JS) ---
+    // Esto es "sacar la ropa de la maleta" para poder usarla.
+    function deserializar(texto) {
+        return JSON.parse(texto);
+    }
+
+    let objetoRecuperado = deserializar(datosEnTexto);
+    console.log("2. Objeto JS (Deserializado):", objetoRecuperado);
+
+
+    // --- PASO 4: Mostrar los datos en el HTML ---
+    // Accedemos a las propiedades usando el punto (.)
+    let capaDestino = document.getElementById("resultado");
+
+    capaDestino.innerHTML = `
+            <ul>
+                <li><strong>Nombre:</strong> ${objetoRecuperado.nombre}</li>
+                <li><strong>Apellidos:</strong> ${objetoRecuperado.apellidos}</li>
+                <li><strong>Edad:</strong> ${objetoRecuperado.edad}</li>
+                <li><strong>Ciudad:</strong> ${objetoRecuperado.ciudad}</li>
+            </ul>
+        `;
+</script>
+</body>
+</html>
