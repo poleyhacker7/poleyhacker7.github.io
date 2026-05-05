@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e28300-a26e-468b-8f9d-f3dbacdd0d1f" name="Changes" comment="ejercicios">
+      <change afterPath="$PROJECT_DIR$/JSON/ej4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JSON/ej4MegaReto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/Listas.html" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/Listas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +92,8 @@
       <workItem from="1777357198009" duration="3245000" />
       <workItem from="1777530186510" duration="8846000" />
       <workItem from="1777875713266" duration="387000" />
+      <workItem from="1777890243426" duration="1240000" />
+      <workItem from="1777961780375" duration="7015000" />
     </task>
     <task id="LOCAL-00001" summary="ejercicios">
       <option name="closed" value="true" />
@@ -106,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777539783668</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ejercicios">
+      <option name="closed" value="true" />
+      <created>1777890273079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777890273079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto 4 - Envío a MariaDB</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>Gestión de Productos - Reto 4</h1>
+
+<h2 id="mensajeError"></h2>
+
+<div class="formulario">
+    <input type="text" id="desc" placeholder="Descripción del producto">
+    <input type="number" id="prov" placeholder="ID Proveedor">
+    <input type="number" id="prec" placeholder="Precio">
+    <button id="btnEnviar">Enviar al Servidor</button>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>ID Proveedor</th>
+        <th>Precio</th>
+    </tr>
+    </thead>
+    <tbody id="tablaCuerpo">
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function() {
+
+        $("#btnEnviar").on("click", function() {
+
+            // A. Recogemos la información de los inputs
+            let datosProducto = {
+                descripcion: $("#desc").val(),
+                idProveedor: parseInt($("#prov").val()),
+                precio: parseFloat($("#prec").val())
+            };
+
+            // B. Petición AJAX
+            $.ajax({
+                url: "https://lm.iesnervion.es/reto4.php",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(datosProducto), // SERIALIZACIÓN
+
+                success: function(respuesta) {
+                    // Mostramos respuesta en consola como pide el enunciado
+                    console.log("Respuesta del servidor:", respuesta);
+
+                    // C. Manejo del error en el H2
+                    let h2 = $("#mensajeError");
+                    if (!respuesta.error) {
+                        $("#mensajeError").text("Todo fue OK");
+                    } else {
+                        $("#mensajeError").text("Error: " + respuesta.error);
+                    }
+
+                    // D. Mostrar la lista en la tabla
+                    let cuerpo = $("#tablaCuerpo");
+                    cuerpo.empty(); // Limpiamos la tabla antes de rellenar
+
+                    $.each(respuesta.lista, function(indice, prod) {
+                        let fila = `<tr>
+                                <td>${prod.id}</td>
+                                <td>${prod.descripcion}</td>
+                                <td>${prod.idProveedor}</td>
+                                <td>${prod.precio}</td>
+                            </tr>`;
+                        cuerpo.append(fila);
+                    });
+                },
+
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error("Error de conexión:", textStatus);
+                    $("#mensajeError").text("Fallo crítico de comunicación.");
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
